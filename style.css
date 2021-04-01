@@ -1,5 +1,6 @@
 html, body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -12,7 +13,8 @@ body {
 
 a {
   text-decoration: none;
-  color: navy;
+  color: #001f4d;
+  font-weight: bold;
 }
 
 #header, #footer {
@@ -23,6 +25,7 @@ a {
   align-items: center;
   justify-content: space-evenly;
   padding: 5px;
+  z-index: 10;
 }
 
 #header {
@@ -31,18 +34,114 @@ a {
 }
 
 #footer {
-  bottom: 0px;
-  height: 20px;
+  bottom: 0;
   position: absolute;
 }
 
-#nav {
+nav {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+.pageHeader {
+  background-image: linear-gradient(to right, rgba(0,51,128,1) 10%, rgba(0,51,128,0.1));
+  width: 85%;
+  padding: 15px;
+  top: 150px;
+  position: absolute;
+  color: white;
+}
+
+.contentBoxSmall {
+  width: 100%;
+  left: 0px;
+  top: 300px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contentBoxSmall > div {
+  display: flex;
+  width: 40%;
+  height: 40vw;
+  margin: 20px;
+}
+
+.contentBoxLarge {
+  width: 100%;
+  height: 500px;
+  left: 0px;
+  top: 300px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+
+.contentBoxSmall .contentHeader {
+  background: #003380;
+  width: 40%;
+  height: 100%;
+  padding: 15px;
+  color: white;
+}
+
+.contentBoxSmall .contentHolder {
+  background: white;
+  width: 60%;
+  height: 100%;
+  padding: 15px;
+  color: #003380;
+  text-align: center;
+}
+
+.contentBoxLarge .contentHolder {
+  background: white;
+  width: 80%;
+  height: 100%;
+  padding: 15px;
+  color: #003380;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #003380, #ffffff);
+}
+
+
+.question {
+  background-color: #003380;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  margin: 10px 0px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.active, question:hover {
+  background-color: #2864bd;
+}
+
+.answer {
+  padding: 0px 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}.page {
   display: flex;
   flex-direction: column;
   align-items: center;
