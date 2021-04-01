@@ -116,6 +116,10 @@ nav {
   justify-content: center;
 }
 
+#aboutContent .contentHeader, #aboutContent .contentHolder {
+  align-items: flex-start;
+}
+
 
 .question {
   background-color: #003380;
