@@ -3,12 +3,17 @@ html, body {
   padding: 0;
 }
 
+a, h1, h2, p {
+  font-family: 'Comfortaa';
+}
+
 body {
   background: #e6f2ff;
 }
 
 #DevScript {
   color: #333333;
+  font-family: 'Noto Serif SC', serif;
 }
 
 a {
@@ -64,7 +69,7 @@ nav {
 .contentBoxSmall > div {
   display: flex;
   width: 40%;
-  height: 30vw;
+  height: 300px;
   margin: 50px;
 }
 
@@ -77,7 +82,7 @@ nav {
 
 .contentBoxSmall .contentHeader {
   background: #003380;
-  flex-grow: 1;
+  width: 40%;
   height: 100%;
   padding: 15px;
   color: white;
@@ -87,7 +92,7 @@ nav {
 
 .contentBoxSmall .contentHolder {
   background: white;
-  flex-grow: 2;
+  width: 60%;
   height: 100%;
   padding: 15px;
   color: #003380;
@@ -107,10 +112,6 @@ nav {
   margin: 50px;
 }
 
-#homelinks > div {
-  height: 15vw;
-  margin-bottom: 70px;
-}
 
 #homelinks .contentHeader {
   justify-content: center;
@@ -184,4 +185,5 @@ nav {
 
 a.contentHeader {
   text-shadow: 2px 2px 2px black;
+  min-width: 95%;
 }
