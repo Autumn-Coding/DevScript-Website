@@ -35,13 +35,28 @@ a {
 
 #header {
   top: 0px;
+  height: 100px;
   position: fixed;
 }
 
 nav {
   width: 80%;
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  text-align: center;
+  flex-grow: 1;
+  line-height: 100px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #204781;
+  color: white;
 }
 
 .page {
@@ -166,27 +181,28 @@ nav {
 
 #aboutButton {
   background-image: url("https://images.unsplash.com/photo-1544731612-de7f96afe55f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
-  background-size: cover;
 }
 
 #faqButton {
   background-image: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80");
-  background-size: cover;
 }
 
 #contactButton {
   background-image: url("https://images.unsplash.com/photo-1512626120412-faf41adb4874?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
-  background-size: cover;
 }
 
 #creditButton {
   background-image: url("https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
+}
+
+#aboutButton, #faqButton, #contactButton, #creditButton {
   background-size: cover;
+  position: center;
 }
 
 a.contentHeader {
   text-shadow: 2px 2px 2px black;
   flex-grow: 1;
-  border: 5px solid white;
+  border: 3px solid white;
   border-radius: 0pt 0pt 50pt 0pt;
 }
