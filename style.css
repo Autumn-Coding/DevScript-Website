@@ -60,7 +60,7 @@ nav {
 }
 
 .contentBoxSmall {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -71,6 +71,7 @@ nav {
   width: 37%;
   height: 300px;
   margin: 50px;
+  flex-grow: 1;
 }
 
 .contentBoxLarge {
@@ -185,7 +186,7 @@ nav {
 
 a.contentHeader {
   text-shadow: 2px 2px 2px black;
-  min-width: 95%;
+  flex-grow: 1;
   border: 5px solid white;
   border-radius: 0pt 0pt 50pt 0pt;
 }
