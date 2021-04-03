@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
   <title>DevScript - FAQ</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"></head>
@@ -25,6 +25,15 @@
 
   <div class="contentBoxLarge">
     <div class="contentHolder">
+
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group">
+          <label for="searchFAQ">Find a Question:</label>
+          <input type="search" class="form-control" id="searchFAQ">
+        </div>
+        <button type="submit" class="btn btn-default" onclick="SearchingFAQ()">Submit</button>
+      </form>
+
 
 <button class="question">What is DevScript?</button>
 <div class="answer">
