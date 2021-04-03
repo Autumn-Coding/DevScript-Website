@@ -1,5 +1,6 @@
 var questions = document.getElementsByClassName("question");
-var searchInput = input.value.toUpperCase();
+var searchQuestion = document.getElementById("searchFAQ");
+var searchInput;
 var thisQuestion;
 
 for (i = 0; i < questions.length; i++) {
@@ -17,12 +18,13 @@ for (i = 0; i < questions.length; i++) {
 
 
 function SearchingFAQ() {
+  searchInput = searchQuestion.value.toUpperCase();
   for (i = 0; i < questions.length; i++) {
-    thisQuestion = questions[i].textContent
+    thisQuestion = questions[i].textContent;
     if (thisQuestion.toUpperCase().indexOf(searchInput) > -1) {
-      questions[i].style.display = "";
+      questions[i].classList.remove("hide");
     } else {
-      questions[i].style.display = "none";
+      questions[i].classList.add("hide");
     }
   }
 }
